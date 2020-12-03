@@ -9,15 +9,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
 
-    <!-- TODO: Add some Google Fonts -->
-
     <link rel="stylesheet" href="style.css" />
 
-    <!-- TODO: Update '<title>'. -->
+    <title>Form Processing Demo</title>
     <title>Form Processing</title>
   </head>
   <body>
     <form>
+      <!-- All inputs should be 'id'ed -->
       <label for="pet-select">Choose a pet:</label>
 
       <select id="pet-select">
@@ -30,6 +29,9 @@
         <option value="goldfish">Goldfish</option>
       </select>
 
+      <!-- Radio buttons MUST use 'name' to 'match with' correct value.
+        BOTH radio buttons and checkboxes have a 'checked' key. Other things in this form don't!
+      -->
       <div>
         <div>
           <input type="radio" id="huey" name="drone" value="huey" checked />

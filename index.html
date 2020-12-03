@@ -17,7 +17,7 @@
     <form>
       <!-- All inputs should be 'id'ed -->
       <label for="pet-select">Choose a pet:</label>
-      <select id="pet-select">
+      <select id="pet-select" name="pet-select">
         <option value="">--Please choose an option--</option>
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
@@ -27,9 +27,6 @@
         <option value="goldfish">Goldfish</option>
       </select>
 
-      <!-- Radio buttons MUST use 'name' to 'match with' correct value.
-        BOTH radio buttons and checkboxes have a 'checked' key. Other things in this form don't!
-      -->
       <div>
         <div>
           <input type="radio" id="huey" name="drone" value="huey" checked />
@@ -49,24 +46,24 @@
 
       <div>
         <div>
-          <input type="checkbox" id="scales" checked />
+          <input type="checkbox" id="scales" checked name="scales" />
           <label for="scales">Scales</label>
         </div>
 
         <div>
-          <input type="checkbox" id="horns" />
+          <input type="checkbox" id="horns" name="horns" />
           <label for="horns">Horns</label>
         </div>
       </div>
 
       <div>
         <label for="name">Name</label>
-        <input type="text" id="name" />
+        <input type="text" id="name" name="name" />
       </div>
 
       <div>
         <label for="age">Age</label>
-        <input type="number" id="age" />
+        <input type="number" id="age" name="age" />
       </div>
 
       <button>Submit</button>
